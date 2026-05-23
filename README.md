@@ -12,7 +12,7 @@ Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
 1. **Camada Heurística:** Filtros baseados em regras de negócio críticas (ex: velocidade de transação, falhas sucessivas de autenticação) que geram um score de risco preliminar.
 2. **Camada de Inteligência Artificial:** Um modelo supervisionado treinado para aprender comportamentos complexos e camuflagens que escapam de regras fixas.
 3. **Privacidade de Dados:** Mascaramento e criptografia por *hash* de dados sensíveis na camada de engenharia de atributos.
-
+![Técnica de Hash](DeteccaoFraudeIA/Hash.png)
 ---
 
 ## Metodologia Experimental 
@@ -23,7 +23,7 @@ O motor híbrido foi submetido a uma esteira rigorosa de **20 cenários experime
 
 O gráfico abaixo consolida o comportamento das métricas conforme elevamos a complexidade do ambiente de teste:
 
-![Evolução das Métricas sob Estresse](CAMINHO_DA_SUA_IMAGEM/evolucao_metricas_artigo.png)
+![Evolução das Métricas sob Estresse](DeteccaoFraudeIA/Evolucao.png)
 
 A Figura X mapeia o comportamento do sistema híbrido frente aos testes de maior criticidade da pesquisa. É possível observar o fenômeno de Resiliência Algorítmica: mesmo diante do cenário de 'Caos' e 'Ruído' (Testes 11º e 12º), onde dados falsos foram camuflados em contas consolidadas, a acurácia global manteve-se linear. O ponto de inflexão ocorre no Teste 14º (SMOTE), onde a geração indiscriminada de dados sintéticos gerou um sutil overlap de classes, derrubando o Recall para o seu menor patamar (0.95). 
 A validação definitiva da abordagem proposta consolida-se no Teste 15º (ADASYN): ao focar o aprendizado nas transações de difícil detecção (fronteira de decisão), o algoritmo recuperou a sensibilidade máxima de 1.0, eliminando completamente os falsos negativos sem desestabilizar a acurácia geral do sistema.
@@ -44,7 +44,7 @@ Diferente do método anterior, o ADASYN focou a criação de dados sintéticos e
 
 O impacto comparativo dessas técnicas e dos cenários de estresse pode ser visualizado no ranking abaixo:
 
-![Ranking de Impacto no Recall](CAMINHO_DA_SUA_IMAGEM/impacto_estresse_comparativo.png)
+![Ranking de Impacto no Recall](DeteccaoFraudeIA/Hanking.png)
 
 ---
 
@@ -52,10 +52,12 @@ O impacto comparativo dessas técnicas e dos cenários de estresse pode ser visu
 
 As matrizes extraídas do ambiente Kaggle validam visualmente a distribuição dos acertos do modelo. O sistema híbrido garantiu o controle estrito sobre os **Falsos Positivos** (evitando o bloqueio de clientes legítimos como no "Paradoxo do VIP") ao mesmo tempo em que zerou os Falsos Negativos em ataques críticos automatizados.
 
-*(Insira aqui as imagens das matrizes que você possui)*
-| Cenário Base (Teste 1º) | Cenário de Caos (Teste 11º) |
-| :---: | :---: |
-| ![Matriz Ideal](CAMINHO_DA_SUA_IMAGEM/matriz_azul.png) | ![Matriz Caos](CAMINHO_DA_SUA_IMAGEM/matriz_roxa.png) |
+![Transações noturnas](DeteccaoFraudeIA/Teste1.png)
+![Analisando perfil comportamental](DeteccaoFraudeIA/Teste2.png)
+![Dados sujos no banco de dados](DeteccaoFraudeIA/Teste3.png)
+![Coluna idade_conta_dias neutralizada](DeteccaoFraudeIA/Teste4.png)
+![Oversampling com SMOTE](DeteccaoFraudeIA/Teste5.png)
+![Oversampling com ADASYN](DeteccaoFraudeIA/Teste6.png)
 
 ---
 
