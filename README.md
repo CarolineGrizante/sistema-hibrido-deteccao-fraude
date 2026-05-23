@@ -44,6 +44,7 @@ O impacto comparativo dessas técnicas e dos cenários de estresse pode ser visu
 <div align="center">
   <img src="DeteccaoFraudeIA/Hanking.png" width="600">
 </div>
+
 ---
 
 ## Matrizes de Confusão (Validação Kaggle)
