@@ -25,7 +25,7 @@ O gráfico abaixo consolida o comportamento das métricas conforme elevamos a co
 
 ![Evolução das Métricas sob Estresse](DeteccaoFraudeIA/Evolucao.png)
 
-A Figura X mapeia o comportamento do sistema híbrido frente aos testes de maior criticidade da pesquisa. É possível observar o fenômeno de Resiliência Algorítmica: mesmo diante do cenário de 'Caos' e 'Ruído' (Testes 11º e 12º), onde dados falsos foram camuflados em contas consolidadas, a acurácia global manteve-se linear. O ponto de inflexão ocorre no Teste 14º (SMOTE), onde a geração indiscriminada de dados sintéticos gerou um sutil overlap de classes, derrubando o Recall para o seu menor patamar (0.95). 
+A Figura mapeia o comportamento do sistema híbrido frente aos testes de maior criticidade da pesquisa. É possível observar o fenômeno de Resiliência Algorítmica: mesmo diante do cenário de 'Caos' e 'Ruído' (Testes 11º e 12º), onde dados falsos foram camuflados em contas consolidadas, a acurácia global manteve-se linear. O ponto de inflexão ocorre no Teste 14º (SMOTE), onde a geração indiscriminada de dados sintéticos gerou um sutil overlap de classes, derrubando o Recall para o seu menor patamar (0.95). 
 A validação definitiva da abordagem proposta consolida-se no Teste 15º (ADASYN): ao focar o aprendizado nas transações de difícil detecção (fronteira de decisão), o algoritmo recuperou a sensibilidade máxima de 1.0, eliminando completamente os falsos negativos sem desestabilizar a acurácia geral do sistema.
 
 Enquanto a Acurácia Geral manteve-se estável, o **Recall (Métrica de Ouro)** oscilou de forma controlada nos cenários de maior estresse, demonstrando que o sistema não entra em colapso sob dados corrompidos ou ataques coordenados.
