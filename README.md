@@ -4,7 +4,7 @@ Este repositório contém os códigos, metodologias e resultados do desenvolvime
 
 ---
 
-## 🚀 Visão Geral do Projeto
+## Visão Geral do Projeto
 
 O grande desafio de sistemas antifraude tradicionais reside no desbalanceamento severo de classes e na sofisticação dos ataques contemporâneos (*Carding*, Invasão de Contas, Ataques de Força Bruta). 
 
@@ -15,7 +15,7 @@ Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
 
 ---
 
-## 📊 Metodologia Experimental 
+## Metodologia Experimental 
 
 O motor híbrido foi submetido a uma esteira rigorosa de **20 cenários experimentais** para testar seus limites de resiliência. Os dados foram extraídos e validados utilizando o ambiente Kaggle. Os experimentos englobaram desde o cenário base ideal até o "Caos Absoluto" (injeção de ruídos, remoção de colunas essenciais e inserção de clientes com perfis atípicos/VIPs).
 
@@ -32,7 +32,7 @@ A validação definitiva da abordagem proposta consolida-se no Teste 15º (ADASY
 
 ---
 
-## 🧪 O Desafio do Balanceamento: SMOTE vs. ADASYN
+## O Desafio do Balanceamento: SMOTE vs. ADASYN
 
 Um dos focos principais desta pesquisa foi o tratamento estatístico do desequilíbrio de classes. Avaliamos as duas técnicas mais populares de sobreamostragem sintética (*Oversampling*):
 
@@ -48,7 +48,7 @@ O impacto comparativo dessas técnicas e dos cenários de estresse pode ser visu
 
 ---
 
-## 🧩 Matrizes de Confusão (Validação Kaggle)
+## Matrizes de Confusão (Validação Kaggle)
 
 As matrizes extraídas do ambiente Kaggle validam visualmente a distribuição dos acertos do modelo. O sistema híbrido garantiu o controle estrito sobre os **Falsos Positivos** (evitando o bloqueio de clientes legítimos como no "Paradoxo do VIP") ao mesmo tempo em que zerou os Falsos Negativos em ataques críticos automatizados.
 
@@ -69,6 +69,6 @@ As matrizes extraídas do ambiente Kaggle validam visualmente a distribuição d
 
 ---
 
-## 📈 Conclusão
+## Conclusão
 
 Os resultados demonstraram que a fusão de heurísticas de negócio com inteligência algorítmica adaptativa cria um sistema altamente resiliente. O uso do **ADASYN** provou ser a abordagem superior para o tratamento de fraudes financeiras complexas, permitindo manter os sistemas seguros mesmo sob condições adversas e em estrita conformidade com a LGPD.
