@@ -1,4 +1,4 @@
-# Desenvolvimento de um Sistema Híbrido de Detecção de Fraude
+# 💳 Desenvolvimento de um Sistema Híbrido de Detecção de Fraude 
 Este repositório contém os códigos, metodologias e resultados do desenvolvimento de um sistema inteligente de prevenção à fraude em transações com cartões de crédito. O projeto combina a capacidade preditiva de algoritmos de Machine Learning- **Random Forest** com o determinismo de **Heurísticas de Negócio** e a conformidade ética exigida pela LGPD/GDPR através da **anonimização de dados**.
 
 ---
