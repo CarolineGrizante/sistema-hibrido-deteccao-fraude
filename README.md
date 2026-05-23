@@ -26,9 +26,8 @@ O motor híbrido foi submetido a uma esteira rigorosa de **20 cenários experime
 ### Evolução da Performance
 
 O gráfico abaixo consolida o comportamento das métricas conforme elevamos a complexidade do ambiente de teste:
-
 <div align="center">
-  <img src="DeteccaoFraudeIA/Evolucao.png" width="450">
+  <img src="DeteccaoFraudeIA/Evolucao.png" width="600">
 </div>
 
 A Figura mapeia o comportamento do sistema híbrido frente aos testes de maior criticidade da pesquisa. É possível observar o fenômeno de Resiliência Algorítmica: mesmo diante do cenário de 'Caos' e 'Ruído' (Testes 11º e 12º), onde dados falsos foram camuflados em contas consolidadas, a acurácia global manteve-se linear. O ponto de inflexão ocorre no Teste 14º (SMOTE), onde a geração indiscriminada de dados sintéticos gerou um sutil overlap de classes, derrubando o Recall para o seu menor patamar (0.95). 
@@ -49,9 +48,9 @@ Ao equilibrar a base em 50/50 de forma uniforme, a fronteira de decisão acabou 
 Diferente do método anterior, o ADASYN focou a criação de dados sintéticos especificamente nas zonas de transição mais difíceis (onde fraudes tentavam mimetizar transações de clientes VIP). O resultado foi a recuperação total da sensibilidade, atingindo **1.0 (100%) de Recall**.
 
 O impacto comparativo dessas técnicas e dos cenários de estresse pode ser visualizado no ranking abaixo:
-
-![Ranking de Impacto no Recall](DeteccaoFraudeIA/Hanking.png)
-
+<div align="center">
+  <img src="DeteccaoFraudeIA/Hanking.png" width="600">
+</div>
 ---
 
 ## Matrizes de Confusão (Validação Kaggle)
