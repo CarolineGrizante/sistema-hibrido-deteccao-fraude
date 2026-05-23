@@ -1,6 +1,6 @@
-# Desenvolvimento de um Sistema Híbrido de Detecção de Fraude 🛡️🤖
+# Desenvolvimento de um Sistema Híbrido de Detecção de Fraude
 
-Este repositório contém os códigos, metodologias e resultados do desenvolvimento de um ecossistema inteligente de prevenção à fraude em transações com cartões de crédito. O projeto combina a capacidade preditiva de algoritmos de Machine Learning (**Random Forest**) com o determinismo de **Heurísticas de Negócio** e a conformidade ética exigida pela LGPD/GDPR através da **anonimização de dados**.
+Este repositório contém os códigos, metodologias e resultados do desenvolvimento de um sistema inteligente de prevenção à fraude em transações com cartões de crédito. O projeto combina a capacidade preditiva de algoritmos de Machine Learning (**Random Forest**) com o determinismo de **Heurísticas de Negócio** e a conformidade ética exigida pela LGPD/GDPR através da **anonimização de dados**.
 
 ---
 
@@ -15,15 +15,18 @@ Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
 
 ---
 
-## 📊 Metodologia Experimental (Os 15 Testes de Estresse)
+## 📊 Metodologia Experimental 
 
-O motor híbrido foi submetido a uma esteira rigorosa de **15 cenários experimentais** para testar seus limites de resiliência. Os dados foram extraídos e validados utilizando o ambiente Kaggle. Os experimentos englobaram desde o cenário base ideal até o "Caos Absoluto" (injeção de ruídos, remoção de colunas essenciais e inserção de clientes com perfis atípicos/VIPs).
+O motor híbrido foi submetido a uma esteira rigorosa de **20 cenários experimentais** para testar seus limites de resiliência. Os dados foram extraídos e validados utilizando o ambiente Kaggle. Os experimentos englobaram desde o cenário base ideal até o "Caos Absoluto" (injeção de ruídos, remoção de colunas essenciais e inserção de clientes com perfis atípicos/VIPs).
 
 ### Evolução da Performance
 
-Para abrir o capítulo de resultados, o gráfico abaixo consolida o comportamento das métricas conforme elevamos a complexidade do ambiente de teste:
+O gráfico abaixo consolida o comportamento das métricas conforme elevamos a complexidade do ambiente de teste:
 
 ![Evolução das Métricas sob Estresse](CAMINHO_DA_SUA_IMAGEM/evolucao_metricas_artigo.png)
+
+A Figura X mapeia o comportamento do sistema híbrido frente aos testes de maior criticidade da pesquisa. É possível observar o fenômeno de Resiliência Algorítmica: mesmo diante do cenário de 'Caos' e 'Ruído' (Testes 11º e 12º), onde dados falsos foram camuflados em contas consolidadas, a acurácia global manteve-se linear. O ponto de inflexão ocorre no Teste 14º (SMOTE), onde a geração indiscriminada de dados sintéticos gerou um sutil overlap de classes, derrubando o Recall para o seu menor patamar (0.95). 
+A validação definitiva da abordagem proposta consolida-se no Teste 15º (ADASYN): ao focar o aprendizado nas transações de difícil detecção (fronteira de decisão), o algoritmo recuperou a sensibilidade máxima de 1.0, eliminando completamente os falsos negativos sem desestabilizar a acurácia geral do sistema.
 
 *Insight:* Enquanto a Acurácia Geral manteve-se estável, o **Recall (Métrica de Ouro)** oscilou de forma controlada nos cenários de maior estresse, demonstrando que o sistema não entra em colapso sob dados corrompidos ou ataques coordenados.
 
