@@ -1,13 +1,9 @@
-<h1 align="center">
-Desenvolvimento de um Sistema Híbrido de Detecção de Fraude
-</h1>
-
+# Desenvolvimento de um Sistema Híbrido de Detecção de Fraude
 Este repositório contém os códigos, metodologias e resultados do desenvolvimento de um sistema inteligente de prevenção à fraude em transações com cartões de crédito. O projeto combina a capacidade preditiva de algoritmos de Machine Learning- **Random Forest** com o determinismo de **Heurísticas de Negócio** e a conformidade ética exigida pela LGPD/GDPR através da **anonimização de dados**.
 
 ---
 
 ## Visão Geral do Projeto
-
 O grande desafio de sistemas antifraude tradicionais reside no desbalanceamento severo de classes e na sofisticação dos ataques contemporâneos (Carding, Invasão de Contas, Ataques de Força Bruta). 
 
 Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
@@ -22,11 +18,9 @@ Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
 ---
 
 ## Metodologia Experimental 
-
 O motor híbrido foi submetido a uma esteira rigorosa de **20 cenários experimentais** para testar seus limites de resiliência. Os dados foram extraídos e validados utilizando o ambiente Kaggle. Os experimentos englobaram desde o cenário base ideal até o "Caos Absoluto" (injeção de ruídos, remoção de colunas essenciais e inserção de clientes com perfis atípicos/VIPs).
 
 ### Evolução da Performance
-
 O gráfico abaixo consolida o comportamento das métricas conforme elevamos a complexidade do ambiente de teste:
 <div align="center">
   <img src="DeteccaoFraudeIA/Evolucao.png" width="600">
@@ -40,7 +34,6 @@ Enquanto a Acurácia Geral manteve-se estável, o **Recall (Métrica de Ouro)** 
 ---
 
 ## O Desafio do Balanceamento: SMOTE vs. ADASYN
-
 Um dos focos principais desta pesquisa foi o tratamento estatístico do desequilíbrio de classes. Avaliamos as duas técnicas mais populares de sobreamostragem sintética -Oversampling:
 
 ### 1. SMOTE 
@@ -56,7 +49,6 @@ O impacto comparativo dessas técnicas e dos cenários de estresse pode ser visu
 ---
 
 ## Matrizes de Confusão (Validação Kaggle)
-
 As matrizes extraídas do ambiente Kaggle validam visualmente a distribuição dos acertos do modelo. O sistema híbrido garantiu o controle estrito sobre os **Falsos Positivos** (evitando o bloqueio de clientes legítimos como no "Paradoxo do VIP") ao mesmo tempo em que zerou os Falsos Negativos em ataques críticos automatizados.
 
 ![Transações noturnas](DeteccaoFraudeIA/Teste1.png)
@@ -69,7 +61,6 @@ As matrizes extraídas do ambiente Kaggle validam visualmente a distribuição d
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-
 * **Linguagem Principal:** Python 3.x
 * **Manipulação e Estatística:** `pandas`, `numpy`
 * **Machine Learning & Amostragem:** `scikit-learn`, `imblearn` (SMOTE/ADASYN)
@@ -77,7 +68,5 @@ As matrizes extraídas do ambiente Kaggle validam visualmente a distribuição d
 * **Ambiente de Computação:** Kaggle Notebooks
 
 ---
-
 ## Conclusão
-
 Os resultados demonstraram que a fusão de heurísticas de negócio com inteligência algorítmica adaptativa cria um sistema altamente resiliente. O uso do **ADASYN** provou ser a abordagem superior para o tratamento de fraudes financeiras complexas, permitindo manter os sistemas seguros mesmo sob condições adversas e em estrita conformidade com a LGPD.
