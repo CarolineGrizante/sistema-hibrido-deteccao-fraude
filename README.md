@@ -13,7 +13,9 @@ Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
 2. **Camada de Inteligência Artificial:** Um modelo supervisionado treinado para aprender comportamentos complexos e camuflagens que escapam de regras fixas.
 3. **Privacidade de Dados:** Mascaramento e criptografia por *hash* de dados sensíveis na camada de engenharia de atributos.
 
-<img src="DeteccaoFraudeIA/Hash.png" width="450">
+<div align="center">
+  <img src="DeteccaoFraudeIA/Hash.png" width="450">
+</div>
 
 ---
 
@@ -25,7 +27,9 @@ O motor híbrido foi submetido a uma esteira rigorosa de **20 cenários experime
 
 O gráfico abaixo consolida o comportamento das métricas conforme elevamos a complexidade do ambiente de teste:
 
-![Evolução das Métricas sob Estresse](DeteccaoFraudeIA/Evolucao.png)
+<div align="center">
+  <img src="DeteccaoFraudeIA/Evolucao.png" width="450">
+</div>
 
 A Figura mapeia o comportamento do sistema híbrido frente aos testes de maior criticidade da pesquisa. É possível observar o fenômeno de Resiliência Algorítmica: mesmo diante do cenário de 'Caos' e 'Ruído' (Testes 11º e 12º), onde dados falsos foram camuflados em contas consolidadas, a acurácia global manteve-se linear. O ponto de inflexão ocorre no Teste 14º (SMOTE), onde a geração indiscriminada de dados sintéticos gerou um sutil overlap de classes, derrubando o Recall para o seu menor patamar (0.95). 
 A validação definitiva da abordagem proposta consolida-se no Teste 15º (ADASYN): ao focar o aprendizado nas transações de difícil detecção (fronteira de decisão), o algoritmo recuperou a sensibilidade máxima de 1.0, eliminando completamente os falsos negativos sem desestabilizar a acurácia geral do sistema.
