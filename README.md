@@ -35,10 +35,8 @@ Enquanto a Acurácia Geral manteve-se estável, o **Recall (Métrica de Ouro)** 
 
 ## O Desafio do Balanceamento: SMOTE vs. ADASYN
 Um dos focos principais desta pesquisa foi o tratamento estatístico do desequilíbrio de classes. Avaliamos as duas técnicas mais populares de sobreamostragem sintética -Oversampling:
-
 ### 1. SMOTE 
 Ao equilibrar a base em 50/50 de forma uniforme, a fronteira de decisão acabou gerando um "ruído de vizinhança", fazendo com que o modelo sofresse sua maior degradação de sensibilidade, fechando com um **Recall de 0.95**.
-
 ### 2. ADASYN 
 Diferente do método anterior, o ADASYN focou a criação de dados sintéticos especificamente nas zonas de transição mais difíceis (onde fraudes tentavam mimetizar transações de clientes VIP). O resultado foi a recuperação total da sensibilidade, atingindo **1.0 (100%) de Recall**.
 
