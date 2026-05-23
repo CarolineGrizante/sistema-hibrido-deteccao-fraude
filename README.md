@@ -9,7 +9,7 @@ O grande desafio de sistemas antifraude tradicionais reside no desbalanceamento 
 Este projeto propõe uma abordagem em camadas (Defesa em Profundidade):
 1. **Camada Heurística:** Filtros baseados em regras de negócio críticas (ex: velocidade de transação, falhas sucessivas de autenticação) que geram um score de risco preliminar.
 2. **Camada de Inteligência Artificial:** Um modelo supervisionado treinado para aprender comportamentos complexos e camuflagens que escapam de regras fixas.
-3. **Privacidade de Dados:** Mascaramento e criptografia por *hash* de dados sensíveis na camada de engenharia de atributos.
+3. **Privacidade de Dados:** Mascaramento e criptografia por hash de dados sensíveis na camada de engenharia de atributos.
 
 <div align="center">
   <img src="DeteccaoFraudeIA/Hash.png" width="450">
